@@ -1,0 +1,95 @@
+.fotorama{
+  position: absolute;
+  max-width: 100%!Important;
+  margin: 0 auto;
+  margin-top: 100px;
+  position: relative;
+  text-align: center;
+  width: 1400px;
+	left: 50%;
+	top: 40%;
+	transform: translate(-50%, -50%);
+	padding: 40px;
+  border-radius: 5px;
+}
+
+main {
+	width: 100%;
+	height: 100vh;
+	background-image: url(bg.jpg);
+	background-size: cover;
+	transition: all .2s ease;
+}
+.button {
+  width: 340px;
+  height: 57px;
+  position: relative;
+  display: block;
+  margin: 0px auto;
+  text-align: center;
+  padding: 9px 11px 9px 11px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  background: #025026;
+  border-radius: 11px;
+  color: rgb(0, 0, 0)!Important;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 600;
+  border: none;
+  margin-top: 500px;
+  transform: translate(-50%, -50%);
+}
+
+.button:hover {
+  background: #27bd25;
+  box-shadow: 0 0 10px #fff;
+  color: rgb(255, 255, 255);
+}
+.button:active {
+  color: #000000;
+  background-color: #05300f;
+}
+.gallery {
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	display: none;
+	background-color: rgba(0, 0, 0, .8);
+}
+
+.close-button {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 23px;
+	height: 23px;
+	cursor: pointer;
+}
+
+.close-button:before {
+	content: '';
+	background-color: #fff;
+	position: absolute;
+	height: 1px;
+	width: 20px;
+	top: 11px;
+	left: -4px;
+	transform: rotate(-45deg);
+}
+
+.close-button:after {
+	content: '';
+	background-color: #fff;
+	position: absolute;
+	height: 1px;
+	width: 20px;
+	top: 11px;
+	transform: rotate(45deg);
+	left: -4px;
+}
+
+
